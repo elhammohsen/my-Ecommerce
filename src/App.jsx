@@ -26,7 +26,8 @@ import Recentcategories from './Components/Recentcategories/Recentcategories'
 
 
 let routers=createBrowserRouter([{path:'',element:<Layout/>,children:[
-  {index:true,element:<ProtectedRoute><Home/></ProtectedRoute>},
+  {index:true,element:<Register/>},
+  {path:'home',element:<ProtectedRoute><Home/></ProtectedRoute>},
   {path:'cart',element:<ProtectedRoute><Cart/></ProtectedRoute>},
   {path:'categories',element:<ProtectedRoute><Categories/></ProtectedRoute>},
   {path:'products',element:<ProtectedRoute><Products/></ProtectedRoute>},
@@ -36,6 +37,7 @@ let routers=createBrowserRouter([{path:'',element:<Layout/>,children:[
   {path:'brandsDetails/:id/:name',element:<ProtectedRoute><BrandsDetails/></ProtectedRoute>},
   {path:'checkout',element:<ProtectedRoute><Checkout/></ProtectedRoute>},
   {path:'allorders',element:<ProtectedRoute><Allorders/></ProtectedRoute>},
+  {path:'my-Ecommerce',element:<ProtectedRoute><Home/></ProtectedRoute>},
   {path:'login',element:<Login/>},
   {path:'register',element:<Register/>},
   {path:'*',element:<NotFound/>},
