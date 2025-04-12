@@ -37,7 +37,7 @@ let routers=createBrowserRouter([{path:'',element:<Layout/>,children:[
   {path:'brandsDetails/:id/:name',element:<ProtectedRoute><BrandsDetails/></ProtectedRoute>},
   {path:'checkout',element:<ProtectedRoute><Checkout/></ProtectedRoute>},
   {path:'allorders',element:<ProtectedRoute><Allorders/></ProtectedRoute>},
-  // {path:'my-Ecommerce',element:<ProtectedRoute><Home/></ProtectedRoute>},
+  {path:'my-Ecommerce',element:<ProtectedRoute><Home/></ProtectedRoute>},
   {path:'login',element:<Login/>},
   {path:'register',element:<Register/>},
   {path:'*',element:<NotFound/>},
