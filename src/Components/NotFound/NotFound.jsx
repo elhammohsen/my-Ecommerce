@@ -8,6 +8,8 @@ export default function NotFound() {
     
   return <>
     <h2 className="text-3xl my-10 font-bold">NotFound</h2>
-    <img className='w-[75%]' src={img1} alt="" />
+    <div className='w-[75%] flex justify-center items-center'>
+    <img  src={img1} alt="" />
+    </div>
   </>
 }
